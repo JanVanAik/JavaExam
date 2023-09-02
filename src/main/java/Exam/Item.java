@@ -7,7 +7,7 @@ public class Item {
     protected Integer Id;
     protected Integer Amount;
     protected String Name;
-    public Integer DropChance;
+    protected Integer DropChance;
     public Item (Integer Id, Integer Amount, String Name, Integer DropChance) {
         this.Id = Id;
         this.Amount = Amount;
@@ -30,11 +30,15 @@ public class Item {
         return Id;
     }
 
-    public String getDropChance() {
+    public Integer getDropChance() {
         return DropChance;
     }
 
     public String getName() {
         return Name;
+    }
+
+    public void setDropChance(Integer dropChance) {
+        DropChance = dropChance;
     }
 }
