@@ -21,7 +21,7 @@ public class GetPrize {
                         writer.write(item.toString() + "\n");
                         item.setAmount(item.getAmount()-amt);
                         if (item.getAmount() == 0){
-                            GenerateItems.items.remove(item);
+                            GenerateItems.UserItems.remove(item);
                         }
                     } catch (IOException e) {
                         throw new RuntimeException(e);
