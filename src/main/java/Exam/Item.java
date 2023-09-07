@@ -41,4 +41,8 @@ public class Item {
     public void setDropChance(Integer dropChance) {
         DropChance = dropChance;
     }
+
+    public void setAmount(Integer amount) {
+        Amount = amount;
+    }
 }
